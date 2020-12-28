@@ -226,7 +226,6 @@ class Amqp extends Connector
         //消费者模式
         $callback = function($msg) use ($_this, $work, $lastRestart, $connection, $queue, $delay, $maxTries){
             //echo date('Y-m-d H:i:s')." [x] Received",$msg->body,PHP_EOL;
-
             $nextJob = $msg->body;
             if ($nextJob) {
                 $job = $nextJob;
