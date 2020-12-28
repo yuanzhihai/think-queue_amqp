@@ -5,10 +5,7 @@
   "autoload": {
     "psr-4": {
       "think\\": "src"
-    },
-    "files": [
-      "src/common.php"
-    ]
+    }
   },
   "minimum-stability": "dev",
   "require": {
